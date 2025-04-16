@@ -3,36 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title></title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-      background: #ffffff;
-    }
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 
-    #lottie {
-      width: 100vw;
-      height: 100vh;
-    }
-  </style>
 </head>
 <body>
 
-<div id="lottie"></div>
-
-<script>
-  lottie.loadAnimation({
-    container: document.getElementById('lottie'),
-    renderer: 'svg',
-    loop: false,
-    autoplay: true,
-    path: 'https://raw.githubusercontent.com/morbegoso-learningplan/autcamp/refs/heads/main/c1-1-2-2.json'
-  });
-</script>
+<dotlottie-player src="https://raw.githubusercontent.com/morbegoso-learningplan/autcamp/refs/heads/main/c1-1-2-1.json" background="transparent" speed="1" style="width: 100vw; height: 100vh" direction="1" playMode="normal" controls></dotlottie-player>
 
 </body>
 </html>
